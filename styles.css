@@ -1,28 +1,61 @@
 * {
    padding: 7px; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: white;
+}
+
+*:not[name="header"] {
+    display: grid;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
 }
 
 .header {
     display: flex;
+    background-color: rgb(60, 89, 60);
+    width: 100%;
+}
+
+.header div {
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(60, 89, 60);
 }
 
-.header button {
+.header div div2 {
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 15px;
+}
+
+.header div div2 button {
     margin: 10px;
+    padding: 15px;
+    background-color: rgb(60, 89, 60);
+    border-radius: 15px;
 }
 
 .one {
     display: flex;
     flex-direction: row;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
+    justify-content: space-evenly;
+    background-color: rgb(60, 89, 60);
 }
 
 .one div2 {
     display: flex;
     flex-direction: column;
+    width: 25%;
 }
 
 .one div1 { 
@@ -32,34 +65,52 @@
 
 .one img {
     border-radius: 15px;
+    max-width: 100%;
+    height: auto;
 }
 
 .two {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: rgb(104, 129, 106);
 }
 
 .two .title {
     display: flex;
     justify-content: center;
-    text-align: center;
+    
 }
 
 .two .weapons {
+    justify-content: center;
     display: flex;
     text-align: center;
+
 }
 
 .two .weapons div img {
-    border: 100px;
+    background-color: white;
+    border-radius: 15px;
+    border: 5px;
+    border-style: solid;
     border-color: darkseagreen;
+    flex-shrink: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.two .weapons div p {
+    width: 150px
 }
 
 .three {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 125px;
+    padding: 125px;
+    background-color: rgb(83, 130, 99);
 }
 
 .three p {
@@ -69,19 +120,40 @@
 
 .four {
     display: flex;
-    justify-content: space-around;
-    margin: 75px;
+    background-color: rgb(182, 217, 176); 
 }
 
-.four p {
+.four div {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: rgb(43, 103, 73);
+}
+
+.four div p {
     display: flex;
 }
 
-.four a {
+.four div a {
     display: flex;
+}
+
+.four div a button {
+    background-color: rgb(43, 103, 73);
+    border-radius: 15px;
 }
 
 .footer {
     text-align: center;
-    margin: 15px;
+    padding: 15px;
+    background-color: rgb(60, 89, 60);
 }
