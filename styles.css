@@ -1,43 +1,87 @@
-main {
-   padding: 10%; 
+* {
+   padding: 7px; 
 }
 
 .header {
-    padding: 10;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header button {
+    margin: 10px;
 }
 
 .one {
     display: flex;
-    position: relative;
-    
+    flex-direction: row;
+    margin-bottom: 25px;
 }
 
-.one h1 {
-    text-align: center;
-    width: 200px;
-    position: absolute;
+.one div2 {
+    display: flex;
+    flex-direction: column;
 }
 
+.one div1 { 
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.one img {
+    border-radius: 15px;
+}
 
 .two {
     display: flex;
-    position: relative;
+    flex-direction: column;
 }
 
-.two title {
+.two .title {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    position: absolute;
 }
 
-
-.two div {
-    padding: 15px;
-    
+.two .weapons {
+    display: flex;
+    text-align: center;
 }
 
-.two .div img {
+.two .weapons div img {
     border: 100px;
     border-color: darkseagreen;
 }
 
+.three {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 125px;
+}
+
+.three p {
+    position: relative;
+    left: 150px;
+}
+
+.four {
+    display: flex;
+    justify-content: space-around;
+    margin: 75px;
+}
+
+.four p {
+    display: flex;
+}
+
+.four a {
+    display: flex;
+}
+
+.footer {
+    text-align: center;
+    margin: 15px;
+}
